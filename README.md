@@ -1,4 +1,4 @@
-# Admin Dashboard - Budget Tracking App
+# Simple Budget Tracking App
 
 - Project from _03/01/2022 / **reupload**_
 

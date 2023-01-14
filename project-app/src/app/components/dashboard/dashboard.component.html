@@ -1,0 +1,132 @@
+<!-- <app-header></app-header> -->
+<div >
+  <div class="dash-container" *ngIf = "user">
+    <app-profile-pic ></app-profile-pic>
+    <div class="div-cards">
+      <div class="row">
+        <!-- one card starts -->
+        <div class="divOneCard">
+          <mat-card class="cardTop">
+            <!-- <img mat-card-sm-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" class = "slicka"> -->
+            <mat-icon
+              aria-hidden="false"
+              aria-label="Example home icon"
+              class="slicka income"
+              >money</mat-icon
+            >
+            <mat-card-subtitle>TOTAL INCOME</mat-card-subtitle>
+            <mat-card-title>${{ totalIncome }}</mat-card-title>
+            <div class="divider"></div>
+            <mat-card-subtitle class="additional"
+              >more information</mat-card-subtitle
+            >
+          </mat-card>
+        </div>
+        <!-- one card ends -->
+  
+        <div class="divOneCard">
+          <mat-card class="cardTop" (click)="openDialog()">
+            <mat-icon
+              aria-hidden="false"
+              aria-label="Example home icon"
+              class="slicka expenses"
+              >undo</mat-icon
+            >
+            <mat-card-subtitle>TOTAL EXPENSES</mat-card-subtitle>
+            <mat-card-title>${{ totalExpenses }}</mat-card-title>
+            <div class="divider"></div>
+            <mat-card-subtitle class="additional"
+              >more information</mat-card-subtitle
+            >
+          </mat-card>
+        </div>
+        <div class="divOneCard">
+          <mat-card class="cardTop">
+            <mat-icon
+              aria-hidden="false"
+              aria-label="Example home icon"
+              class="slicka salary"
+              >redo</mat-icon
+            >
+            <mat-card-subtitle>SALARY</mat-card-subtitle>
+            <mat-card-title *ngIf="user">${{ salary }}</mat-card-title>
+            <div class="divider"></div>
+            <mat-card-subtitle class="additional"
+              >more information</mat-card-subtitle
+            >
+          </mat-card>
+        </div>
+        <div class="divOneCard">
+          <mat-card class="cardTop" (click) = "clicked()">
+            <mat-icon
+              aria-hidden="false"
+              aria-label="Example home icon"
+              class="slicka businesses"
+              >launch</mat-icon
+            >
+            <mat-card-subtitle>BUSINESSES</mat-card-subtitle>
+            <mat-card-title>x{{ countBusinesses }}</mat-card-title>
+            <div class="divider"></div>
+            <mat-card-subtitle class="additional"
+              >more information</mat-card-subtitle
+            >
+          </mat-card>
+        </div>
+      </div>
+  
+      <div class="row">
+        <!-- card starts -->
+        <div class="divOneCard">
+          <mat-card class="cardBottom exp">
+            <div class="chart-div">
+              <app-chart></app-chart>
+            </div>
+            <mat-card-title>EXPENSES</mat-card-title>
+            <div class="dividerr"></div>
+            <mat-card-subtitle>more information</mat-card-subtitle>
+          </mat-card>
+        </div>
+        <!-- card ends -->
+  
+        <div class="divOneCard">
+          <mat-card class="cardBottom bus">
+            <div class="chart-div" *ngIf = "user">
+              <div>
+                <app-chart2 ></app-chart2>   <!-- ovde treba da prosledim usera [user] = "user" -->
+  
+              </div>
+            </div>
+            <mat-card-title>BUSSINESES</mat-card-title>
+            <div class="dividerr"></div>
+            <mat-card-subtitle>more information</mat-card-subtitle>
+          </mat-card>
+        </div>
+  
+        <div class="divOneCard">
+          <mat-card class="cardBottom inc">
+            <div class="chart-div">
+              <app-chart3></app-chart3>
+  
+              <!-- <div class = "legend blue"></div>
+                          <div class = "legend yellow"></div>
+                          <div class = "legend red"></div> -->
+            </div>
+            <mat-card-title>INCOME</mat-card-title>
+            <div class="dividerr"></div>
+            <mat-card-subtitle>more information</mat-card-subtitle>
+          </mat-card>
+        </div>
+      </div>
+      <div class="tables">
+        <div class="table">
+          <app-table></app-table>
+        </div>
+        <div class="table" >
+          <app-business-table></app-business-table> 
+          <!--  -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>

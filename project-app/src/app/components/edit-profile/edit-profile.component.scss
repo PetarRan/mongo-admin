@@ -1,0 +1,24 @@
+.container{
+    background-color:rgba(140, 140, 140, 0.234);
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 200px;
+}
+app-profile-pic{
+    position: fixed;
+}
+.forma{
+    width: 100%;
+}
+mat-card{
+    width: 100%;
+}
+.header{
+    background-image: linear-gradient(to right top, #fda932, #fdac2b, #fdaf22, #fdb217, #fcb505);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.405);
+}
+.update{
+    background-image: linear-gradient(to right top, #00dc4c, #00d048, #00c443, #00b83f, #00ac3b);
+    width: 50%;
+}

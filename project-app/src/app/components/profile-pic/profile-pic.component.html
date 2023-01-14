@@ -1,0 +1,35 @@
+<div class = "container" >
+   
+  <button mat-raised-button class = "logout" (click) = "logout()">Log out</button>
+  
+    <img src = {{pic}}
+    class = "image"
+    />
+
+  <div class = "label-div">
+    <label class = "main-label">{{name}} </label>
+    <label class = "main-label">{{lastName}}</label>
+  </div>
+
+  <label class = "zanimanje">{{job}}</label>
+
+  <div class = "divider">
+
+  </div>
+    <button mat-button class = "btn"  (click) = "klik('profile')"><a routerLink="/edit-profile"></a>
+      <span>Dashboard</span>
+    </button>
+
+  
+  <mat-divider></mat-divider>
+  <button mat-button class = "btn" (click) = "klik('edit-profile')"><a routerLink="/edit-profile"></a>
+    <span>User profile</span>
+  </button>
+
+  <div class = "divider">
+
+  </div>
+  
+    <mat-calendar class = "kalendar"></mat-calendar>  
+
+</div>

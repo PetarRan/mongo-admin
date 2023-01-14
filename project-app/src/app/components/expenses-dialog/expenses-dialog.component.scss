@@ -1,0 +1,20 @@
+ul.no-bullets {
+    list-style-type: none;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */ 
+    color:rgb(189, 31, 31);
+    font-weight: bolder;
+    text-align: left;
+}
+li{
+    border: 1px solid rgba(156, 156, 156, 0.479);
+    border-radius: 4px;
+    margin-top: 4px;
+    margin-bottom: 4px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    background-color: rgba(231, 231, 231, 0.288),
+    
+}

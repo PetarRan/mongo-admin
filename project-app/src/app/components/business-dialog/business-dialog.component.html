@@ -1,0 +1,66 @@
+<!-- <div mat-dialog-content>This dialog showcases the title, close, content and actions elements.</div> -->
+
+<div mat-dialog-content class="container">
+  <!-- <div class="businessForm">
+    <div fxLayoutAlign="left" fxFlexFill class="addBusiness">
+      <form fxLayoutAlign="stretch" fxLayout="column">
+        <h1>ADD BUSINESS</h1>
+        <mat-form-field appearance="fill">
+          <mat-label>NAME</mat-label>
+          <input matInput type="text" [(ngModel)]="data.businessName"  [ngModelOptions]="{standalone: true}" />
+        </mat-form-field>
+
+        <mat-form-field appearance="fill">
+          <mat-label>INCOME</mat-label>
+          <input matInput type="number" [(ngModel)]="data.income"  [ngModelOptions]="{standalone: true}"/>
+        </mat-form-field>
+        <button>
+          mat-raised-button
+          type="submit"
+          class="submitButton"
+          (click)="desavanje()"
+          IMPORT BUSINESS
+        </button>
+      </form>
+    </div>
+  </div>
+        > -->
+        <form fxLayoutAlign="stretch" fxLayout="column">
+          <h1 mat-dialog-title class="header">ADD BUSINESS</h1>
+          <mat-form-field appearance="fill">
+            <mat-label>BUSINESS NAME</mat-label>
+            <input matInput type="text" [(ngModel)]="businessName"  [ngModelOptions]="{standalone: true}"/>
+          </mat-form-field>
+  
+          <mat-form-field appearance="fill">
+            <mat-label>INCOME</mat-label>
+            <input matInput type="number" [(ngModel)]="income"  [ngModelOptions]="{standalone: true}"/>
+          </mat-form-field>
+  
+          <button
+            mat-raised-button
+            type="submit"
+            class="submitButton"
+            (click)="desavanje()">
+            IMPORT BUSINESS
+          </button>
+        </form>
+
+
+        <div class="businessList">
+  <h1 mat-dialog-title class="header">LIST OF BUSINESSES</h1>
+          <ul class="no-bullets">
+      <li *ngFor="let business of businesses">
+        <mat-card>
+          <span class="left">{{ business.businessName }}</span>
+          <span class="right">$ {{ business.income }}</span>
+        </mat-card>
+      </li>
+    </ul>
+  </div>
+  <div mat-dialog-actions>
+    <button mat-raised-button mat-dialog-close class="closeButton">
+      Close
+    </button>
+  </div>
+</div>

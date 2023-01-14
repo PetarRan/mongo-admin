@@ -1,0 +1,45 @@
+.left{
+    font-weight: bolder;
+}
+.right{
+    float:right;
+    color:rgb(21, 218, 21);
+    font-weight: 500;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */ 
+}
+
+.header{
+    text-align: center;
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.businessList{
+
+    width: 200px;
+    margin-left: 100px;
+
+}
+.addBusiness{
+    border:1px solid rgba(187, 187, 187, 0.384);
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+}
+
+
+.closeButton{
+    margin-top:5px;
+}
+mat-card{
+    background-color: rgba(236, 236, 236, 0.438);
+    height: 50%;
+    align-items: center;
+}

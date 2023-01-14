@@ -1,0 +1,57 @@
+.left{
+    font-weight: bolder;
+}
+.right{
+    float:right;
+    color:rgb(21, 218, 21);
+    font-weight: 500;
+}
+
+ul.no-bullets {
+    list-style-type: none;
+    padding: 20px; /* Remove padding */
+    margin: 0; /* Remove margins */ 
+    border: 1px solid rgba(255, 255, 255, 0.521);
+    border-radius: 5px;
+}
+li{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.submitButton{
+    margin-left: 43px;
+    height: 51px;
+}
+.incomeInput{
+    margin-left: 20px;
+}
+.row{
+    transition-property: background-color;
+}
+.row:hover{
+    cursor: pointer;
+    transition-duration: 70ms;
+    background-color: rgba(207, 228, 233, 0.836);
+} 
+.row:active{
+    background-color: rgba(118, 135, 139, 0.836);
+}
+.deleteBtn{
+    border: 2px solid rgba(0, 0, 0, 0.185);
+    border-radius: 10px;
+    width: 30px;
+    font-size: small;
+    font-weight: 100;
+    text-align: center;
+    background-color: rgba(255, 60, 60, 0.534);
+    color: white;
+    transition-property: background-color;
+}
+.deleteBtn:hover{
+    background-color: red;
+    transition-duration: 200ms;
+}
+.cb{
+    display: flex;
+    flex-direction: row;
+}

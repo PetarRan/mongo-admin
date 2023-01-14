@@ -1,0 +1,73 @@
+    
+*{
+    font-family:"Roboto";
+    font-size: bolder;
+}
+.container {
+    position:fixed;
+    display: flex;
+    width: 200px;
+    height: 100%;
+    background-color:white; 
+    // margin-top: 20px;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 3px 2px 15px rgba(63, 63, 63, 0.363);
+}
+img{
+    height: 100px;
+    width: (120 / 1.375)px;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.247);
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-radius: 100%;
+    transition: .2s ease;
+}
+.image:hover{
+    transition: .2s ease;
+}
+.list{
+    text-align: center;
+}
+.main-label{
+    color: #717171;
+    text-shadow: 1px 1px 8px rgba(90, 90, 90, 0.425);
+    font-size: 14px;
+    font-weight: 40;
+}
+.label-div{
+    margin-top: 10px;
+    margin-bottom: 5px;
+    
+}
+.item{
+    color:#717171;
+    font-size: small;
+}
+.btn{
+    color:#717171;
+    width: 100%;
+    
+}
+.divider{
+    height: 1px;
+    width: 80%;
+    background-color: rgba(104, 104, 104, 0.308);
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.zanimanje{
+    color: lightgrey;
+    font-size: 14px;
+    font-weight: 10;
+    margin-bottom: 10px;
+}
+.kalendar{
+    margin-top: 40px;
+    color: #fda932;
+    padding-right: 5px;
+}
+.logout{
+    margin-top: 10px;
+    background-color: rgba(251, 192, 0, 0.979);
+}

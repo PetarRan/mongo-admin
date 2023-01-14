@@ -1,0 +1,51 @@
+<div fxLayoutAlign="center center" fxFlexFill class="main-div">
+  <mat-card fxFlex="25">
+    <mat-toolbar color="primary" class="header">New account form</mat-toolbar>
+    <form fxLayoutAlign="stretch" fxLayout="column" class="login-form">
+
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Name"  [(ngModel)] = "name" [ngModelOptions]="{standalone: true}"  />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Last name" [(ngModel)] = "lastName" [ngModelOptions]="{standalone: true}"  />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Username" [(ngModel)] = "userName" [ngModelOptions]="{standalone: true}" />
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <input matInput type="password" placeholder="Password"  [(ngModel)] = "password" [ngModelOptions]="{standalone: true}" >
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <input matInput type="password" placeholder="Repeat password"  [(ngModel)] = "repeatedPassword" [ngModelOptions]="{standalone: true}" >
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Job" [(ngModel)] = "job" [ngModelOptions]="{standalone: true}" >
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Salary</mat-label>
+        <input matInput type="number" placeholder="Salary" [(ngModel)] = "salary" [ngModelOptions]="{standalone: true}" >
+      </mat-form-field>
+
+      <mat-form-field appearance="fill">
+        <input matInput placeholder="Picture URL" [(ngModel)] = "picture" [ngModelOptions]="{standalone: true}" >
+      </mat-form-field>
+
+      <button mat-raised-button type="submit" color="primary" (click) = "createAccount()">
+        Create new account!
+      </button>
+      <div class="line"></div>
+      <mat-card-subtitle fxLayoutAlign="center center" class="new-account"
+        >Finished?</mat-card-subtitle
+      >
+      <button mat-raised-button type="submit" class="new-acc-btn" (click) = "backToLogin('login')">
+        Back to Log in
+      </button>
+    </form>
+  </mat-card>
+</div>
